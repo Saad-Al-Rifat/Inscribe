@@ -21,17 +21,49 @@ html, body{
     --sub-menu-color-h: whitesmoke;
     --box-shadow: rgba(0, 0, 0, 0.05);
     --footer-p: black;
+    --fa-bars: #424242;
+    --span-title: #111827;
+    --description: #6B7280;
+    --social: black;
+    --btn: hsl(0, 0%, 80%);
+    --btn-bg: #2563EB;
+    --btn-txt: #ffffff;
 }
 .Dark-color-pallate{
-    --nav-color: #F5F5F5;
+    --nav-color: #e9e2e2;
     --paragraph-color: ;
     --header-color: ;
-    --border-color: #E1D7C6;
-    --background-color1: ;
-    --background-color2: ;
-    --background-color3: ;
-    --sub-menu-color-h: #E7FBE6;
-    --box-shadow: rgba(0, 0, 0, 0.05);
+    --border-color: #d9e6ff;
+    --background-color1: hsl(0, 4%, 18%);
+    --background-color2: hsl(0, 2%, 8%);
+    --background-color3: #2c2525;
+    --sub-menu-color-h: rgb(36, 34, 34);
+    --box-shadow: rgba(184, 172, 172, 0.05);
+    --footer-p: rgb(247, 247, 247);
+    --fa-bars: #e9e2e2;
+    --span-title: #ffffff;
+    --description: #afb5be;
+    --social: rgb(139, 133, 133);
+    --btn-bg: hsl(0, 2%, 8%);
+    --btn-txt: #ffffff;
+}
+.ahz{
+  border-radius: 50%;
+}
+.ahz:hover{
+  background: var(--btn);
+}
+#btn i:first-child {
+  display: none;
+}
+.Dark-color-pallate #btn i:last-child {
+  display: none;
+}
+.Dark-color-pallate #btn i:first-child {
+  display: inline; 
+}
+.fa-bars{
+  color: var(--fa-bars);
 }
 /* logo */
 .hero-logo{
@@ -172,7 +204,7 @@ header nav a{
   }
   
   .title {
-    color: #111827;
+    color: var(--span-title);
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
@@ -180,7 +212,7 @@ header nav a{
   
   .desc {
     margin-top: 0.5rem;
-    color: #6B7280;
+    color: var(--description);
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -188,13 +220,13 @@ header nav a{
   .action {
     display: inline-flex;
     margin-top: 1rem;
-    color: #ffffff;
+    color: var(--btn-txt);
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
     align-items: center;
     gap: 0.25rem;
-    background-color: #2563EB;
+    background-color: var(--btn-bg);
     padding: 4px 8px;
     border-radius: 4px;
   }
@@ -208,13 +240,21 @@ header nav a{
   }
  
   footer{
-    color: var(--footer-p);
     background-color: var(--background-color3);
+    font-weight: 500;
+  }
+
+  footer a{
+    color: var(--footer-p);
   }
 
   footer h6{
     color: var(--border-color);
+    font-size: 1.2rem;
   }
+footer i{
+  color: var(--social);
+}
 
 @media screen and (min-width:1024px) {
     .broom:after{

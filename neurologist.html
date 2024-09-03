@@ -16,23 +16,27 @@
     <title>Neurologist</title>
 </head>
 <body>
-    <nav class="flex md:shadow-sm items-center lg:flex-row lg:justify-between lg:px-[8rem] max-lg:hidden lg:py-[1rem]">
-        <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="cursor-pointer">Inscribe</h1></a></div>
-        <ul class="hidden lg:flex flex-row justify-between space-x-[2rem]">
-            <li><a class="relative broom" href="index.html">Home</a></li>
-            <li class="dropdown-parent relative" id="dropdown-parent"><div class="flex flex-row items-center relative"><i class="fa-solid fa-caret-right mr-[5px] mt-[2px] cursor-pointer text-[1.2rem]" id="arrow"></i><a class="relative" href="#">Categories</a></div>
-             <ul class="fixed shadow-md min-w-[10rem] z-50 rounded-b-2xl dropdown-children drop-container space-y-[0.5rem] py-[1rem]" id="dropdown-children">
-                <li><a href="#" class="sub-menu block">Topic1</a></li>
-                <li><a href="#" class="sub-menu block">Topic2</a></li>
-                <li><a href="#" class="sub-menu block">Topic3</a></li>
-                <li><a href="#" class="sub-menu block">Topic4</a></li>
-                <li><a href="#" class="sub-menu block">Topic5</a></li>
-             </ul>
-            </li>
-            <li><a class="relative broom" href="#">About Us</a></li>
-            <li><a class="relative broom" href="#">Mail Us</a></li>
-        </ul>
-    </nav>
+  <nav class="flex md:shadow-sm items-center lg:flex-row lg:justify-between lg:px-[8rem] max-lg:hidden lg:py-[1rem]">
+    <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="lg:cursor-pointer font-bold text-[2rem]">Inscribe</h1></a></div>
+    <ul class="hidden lg:flex flex-row justify-between space-x-[2rem]">
+        <li><a class="relative broom" href="index.html">Home</a></li>
+        <li class="dropdown-parent relative" id="dropdown-parent"><div class="flex flex-row items-center relative"><i class="fa-solid fa-caret-right mr-[5px] mt-[2px] cursor-pointer text-[1.2rem]" id="arrow"></i><a class="relative" href="#">Categories</a></div>
+         <ul class="fixed shadow-md min-w-[10rem] z-50 rounded-b-2xl dropdown-children drop-container space-y-[0.5rem] py-[1rem]" id="dropdown-children">
+            <li><a href="#" class="sub-menu block">Topic1</a></li>
+            <li><a href="#" class="sub-menu block">Topic2</a></li>
+            <li><a href="#" class="sub-menu block">Topic3</a></li>
+            <li><a href="#" class="sub-menu block">Topic4</a></li>
+            <li><a href="#" class="sub-menu block">Topic5</a></li>
+         </ul>
+        </li>
+        <li><a class="relative broom" href="#">About Us</a></li>
+        <li><a class="relative broom" href="#">Mail Us</a></li>
+    </ul>
+    <button class="relative ahz h-[2.6rem] w-[2.6rem] text-[1.4rem]" id="btn">
+        <i class="fa-regular fa-sun"></i>
+        <i class="fa-regular fa-moon"></i>
+    </button>
+</nav>
     <div class="drawer drawer-end z-50 lg:hidden flex flex-row justify-between items-center p-[2rem]">
         <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="cursor-pointer">Inscribe</h1></a></div>
         <div>
@@ -106,6 +110,7 @@
         </nav>
       </footer>
       <script src="index.js"></script>
+      <script src="other.js"></script>
       <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

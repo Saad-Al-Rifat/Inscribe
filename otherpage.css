@@ -1,5 +1,31 @@
+:root{
+    --bg: white;
+    --h1: rgb(32, 32, 32);
+    --p: black;
+    --hero-logo: rgb(51, 48, 48);
+    --nav-a: black;
+    --nav-i: black;
+}
+.Dark-color-pallate{
+    --bg: #201B1B;
+    --h1: #F0F0F0;
+    --p: #c5bebe;
+    --hero-logo: whitesmoke;
+    --nav-a: rgb(255, 255, 255);
+    --nav-i: rgb(241, 239, 239);
+}
+nav ul {
+    color: var(--nav-a);
+}
+nav h1{
+    color: var(--hero-logo);
+}
+nav i{
+    color: var(--nav-i);
+}
 main{
     padding: 3rem 8rem;
+    background: var(--bg);
 }
 img{
     width: 50rem;
@@ -16,9 +42,26 @@ main div{
 main h1{
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(32, 32, 32);
+    color: var(--h1);
 }
-
+p{
+    color: var(--p);
+}
+  .ahz:hover{
+    background: var(--btn);
+  }
+  #btn i:first-child {
+    display: none;
+  }
+  .Dark-color-pallate #btn i:last-child {
+    display: none;
+  }
+  .Dark-color-pallate #btn i:first-child {
+    display: inline; 
+  }
+  footer{
+    background: var(--bg2);
+  }
 @media screen and (max-width:640px) {
     main{
         padding: 3rem 2rem;

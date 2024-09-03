@@ -1,0 +1,26 @@
+main{
+    padding: 3rem 8rem;
+}
+img{
+    width: 50rem;
+    height: auto;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+main div{
+    margin-bottom: 2rem;
+}
+main h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+@media screen and (max-width:640px) {
+    main{
+        padding: 3rem 2rem;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="otherpage.css">
+    <link rel="stylesheet" href="car.css">
+    <!-- Font aweosome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FavIcon -->
+     <link rel="shortcut icon" href="assets/pencil-solid.svg" type="image/x-icon">
+     <!-- Daisy ui -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Olympic 2024</title>
+</head>
+<body>
+    <nav class="flex md:shadow-sm items-center lg:flex-row lg:justify-between lg:px-[8rem] max-lg:hidden lg:py-[1rem]">
+        <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="cursor-pointer">Inscribe</h1></a></div>
+        <ul class="hidden lg:flex flex-row justify-between space-x-[2rem]">
+            <li><a class="relative broom" href="index.html">Home</a></li>
+            <li class="dropdown-parent relative" id="dropdown-parent"><div class="flex flex-row items-center relative"><i class="fa-solid fa-caret-right mr-[5px] mt-[2px] cursor-pointer text-[1.2rem]" id="arrow"></i><a class="relative" href="#">Categories</a></div>
+             <ul class="fixed shadow-md min-w-[10rem] z-50 rounded-b-2xl dropdown-children drop-container space-y-[0.5rem] py-[1rem]" id="dropdown-children">
+                <li><a href="#" class="sub-menu block">Topic1</a></li>
+                <li><a href="#" class="sub-menu block">Topic2</a></li>
+                <li><a href="#" class="sub-menu block">Topic3</a></li>
+                <li><a href="#" class="sub-menu block">Topic4</a></li>
+                <li><a href="#" class="sub-menu block">Topic5</a></li>
+             </ul>
+            </li>
+            <li><a class="relative broom" href="#">About Us</a></li>
+            <li><a class="relative broom" href="#">Mail Us</a></li>
+        </ul>
+    </nav>
+    <div class="drawer drawer-end z-50 lg:hidden flex flex-row justify-between items-center p-[2rem]">
+        <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="cursor-pointer">Inscribe</h1></a></div>
+        <div>
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <!-- Page content here -->
+          <label for="my-drawer-4" class="drawer-button"><i class="fa-solid fa-bars text-[1.5rem]"></i></label>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Mail Us</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    <main>
+        <img src="assets/olympic.jpg" alt="2024 Olympic">
+    <div>
+        <h1>Host City</h1>
+        <p>The 2024 Summer Olympics will be held in Paris, France, marking the city's third time hosting the Games, following previous events in 1900 and 1924.</p>
+    </div>
+    <div>
+        <h1>Dates</h1>
+        <p>The Games are scheduled to run from July 26 to August 11, 2024, encompassing a two-week period filled with various sports events.</p>
+    </div>
+    <div>
+        <h1>Venues</h1>
+        <p>Events will take place across Paris and its surrounding areas, with key venues including Stade de France for the opening and closing ceremonies and athletics, Paris La Défense Arena for indoor sports, and the Grand Palais for fencing and Taekwondo. The Seine River will host swimming and rowing events.</p>
+    </div>
+    <div>
+        <h1>Sports</h1>
+        <p>The 2024 Olympics will feature a broad spectrum of sports, including traditional events like athletics, swimming, and gymnastics, as well as new and emerging sports.</p>
+    </div>
+    <div>
+        <h1>Sustainability and Legacy</h1>
+        <p>The Paris 2024 organizers are focusing on sustainability, aiming to minimize environmental impact by using existing venues and promoting green practices. The Games are also intended to leave a lasting positive legacy for the city.</p>
+    </div>
+    <div>
+        <h1>Cultural and Economic Impact</h1>
+        <p>The Olympics are expected to have a substantial cultural and economic impact on Paris, highlighting the city's history and culture, boosting tourism, and generating economic benefits.</p>
+    </div>
+    <div>
+        <h1>Legacy Projects</h1>
+        <p>The 2024 Games will promote grassroots sports, improve infrastructure, and foster international cooperation, aiming to deliver a lasting and positive impact on the city and its communities.</p>
+    </div>
+    </main>
+    <footer class="footer bg-base-200 text-base-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="flex flex-row space-x-[1rem]">
+          <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-youtube text-[2rem] lg:active:text-[black] lg:hover:text-[red] text-[black]"></i></a>
+          <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-square-facebook text-[2rem] lg:active:text-[black] lg:hover:text-[blue] text-[black]"></i></a>
+          <a href="https://github.com/Saad-Al-Rifat" target="_blank"><i class="fa-brands fa-github text-[2rem] lg:active:text-[black] lg:hover:text-[gray] text-[black]"></i></a>
+          <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-square-twitter text-[2rem] lg:active:text-[black] lg:hover:text-[blue] text-[black]"></i></a>
+        </nav>
+      </footer>
+      <script src="index.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

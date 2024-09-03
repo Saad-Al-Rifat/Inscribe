@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css file link -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="car.css">
+     <!-- Font aweosome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- FavIcon -->
+      <link rel="shortcut icon" href="assets/pencil-solid.svg" type="image/x-icon">
+      <!-- Daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>inscribe</title>
+</head>
+<body>
+    <header class="lg:pb-[5rem]">
+        <!-- navber-->
+        <nav class="flex md:shadow-sm items-center lg:flex-row lg:justify-between lg:px-[8rem] max-lg:hidden lg:py-[1rem]">
+            <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="lg:cursor-pointer font-bold text-[2rem]">Inscribe</h1></a></div>
+            <ul class="hidden lg:flex flex-row justify-between space-x-[2rem]">
+                <li><a class="relative broom" href="index.html">Home</a></li>
+                <li class="dropdown-parent relative" id="dropdown-parent"><div class="flex flex-row items-center relative"><i class="fa-solid fa-caret-right mr-[5px] mt-[2px] cursor-pointer text-[1.2rem]" id="arrow"></i><a class="relative" href="#">Categories</a></div>
+                 <ul class="fixed shadow-md min-w-[10rem] z-50 rounded-b-2xl dropdown-children drop-container space-y-[0.5rem] py-[1rem]" id="dropdown-children">
+                    <li><a href="#" class="sub-menu block">Topic1</a></li>
+                    <li><a href="#" class="sub-menu block">Topic2</a></li>
+                    <li><a href="#" class="sub-menu block">Topic3</a></li>
+                    <li><a href="#" class="sub-menu block">Topic4</a></li>
+                    <li><a href="#" class="sub-menu block">Topic5</a></li>
+                 </ul>
+                </li>
+                <li><a class="relative broom" href="#">About Us</a></li>
+                <li><a class="relative broom" href="#">Mail Us</a></li>
+            </ul>
+        </nav>
+        <div class="drawer drawer-end z-50 lg:hidden flex flex-row justify-between items-center p-[2rem]">
+            <div class="hero-logo flex items-center space-x-[3px]"><i class="fa-solid fa-bomb"></i><a href="index.html"><h1 class="cursor-pointer">Inscribe</h1></a></div>
+            <div>
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+              <!-- Page content here -->
+              <label for="my-drawer-4" class="drawer-button"><i class="fa-solid fa-bars text-[1.5rem]"></i></label>
+            </div>
+            <div class="drawer-side">
+              <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+              <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                <!-- Sidebar content here -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Mail Us</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        <!-- crousel -->
+         <div class="max-md:hidden overflow-hidden h-[350px] w-[800px] rounded-xl ml-[50%] translate-x-[-50%] mt-[5rem] container">
+            <div class="flex" id="crousel">
+                <div style="background: url(assets/forest-1072828_640.jpg); min-width: 800px; background-repeat: no-repeat; background-size: cover; height: 350px;"></div>
+                <div style="background: url(assets/land-rover-3966732_640.jpg); min-width: 800px; background-repeat: no-repeat; background-size: cover; height: 350px;"></div>
+                <div style="background: url(assets/mountains-1412683_640.png); min-width: 800px; background-repeat: no-repeat; background-size: cover; height: 350px;"></div>
+                <div style="background: url(assets/pexels-mojahid-mottakin-1091655343-27607225.jpg); min-width: 800px; background-repeat: no-repeat; background-size: cover; height: 350px;"></div>
+            </div>
+            <i class="fa-solid fa-arrow-left" onclick="srollLeft()"></i>
+            <i class="fa-solid fa-arrow-right" onclick="srollRight()"></i>
+            <span class="w-[2.3rem] h-[9px] hover:bg-[white] absolute z-30 rounded-sm a" id="img1" onclick="img1()"></span>
+            <span class="w-[2.3rem] h-[9px] hover:bg-[white] absolute z-30 rounded-sm b" id="img2" onclick="img2()"></span>
+            <span class="w-[2.3rem] h-[9px] hover:bg-[white] absolute z-30 rounded-sm c" id="img3" onclick="img3()"></span>
+            <span class="w-[2.3rem] h-[9px] hover:bg-[white] absolute z-30 rounded-sm d" id="img4" onclick="img4()"></span>
+        </div>
+    </header>
+    <main class="lg:px-[8rem] lg:py-[3rem] max-lg:mb-[2rem] max-lg:mt-[2rem]">
+        <h2 class="text-[2rem] font-bold text-center">All blog Posts</h2>
+        <section>
+            <div class="card-container space-y-[3rem]">
+                <!-- card 1 -->
+                 <!-- 1st row -->
+                    <div class="flex max-lg:flex-wrap max-lg:space-x-[1rem] max-lg:space-y-[2rem]  justify-center lg:space-x-[1rem] lg:space-y-[1rem] lg:mt-[2rem]">
+                        <a class="row-span-2" href="quota-movement.html">
+                            <div class="card">
+                                <div class="image" style="background: url(assets/quota-movement.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                                <div class="content">
+                                    <a href="quota-movement.html">
+                                    <span data-key="cardTitle1" class="title">
+                                        2024 Bangladesh quota reform movement
+                                    </span>
+                                    </a>
+                                     
+                                    <a href="quota-movement.html">
+                                    <p data-key="cardDescription1" class="desc">
+                                        The protest began in June 2024, in response to the Supreme Court of Bangladesh reinstating a 30% quota for descendants of freedom fighters, reversing the government decision made in response to the 2018 Bangladesh quota reform movement. Students began to feel like they have a limited opportunity based on merit.
+                                    </p>
+                                    </a>
+                
+                                    <a class="action" href="quota-movement.html">
+                                    Read More
+                                    <span aria-hidden="true">
+                                        →
+                                    </span>
+                                    </a>
+                                </div>
+                                </div>
+                        </a>
+                     <!-- card 2 -->
+                     <a href="stock-market.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/stock.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="stock-market.html">
+                                <span data-key="cardTitle1" class="title">
+                                    An Introduction to the Stock Market: Basics and Beyond
+                                </span>
+                                </a>
+                                 
+                                <a href="stock-market.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    The stock market is a platform where investors buy and sell shares of publicly traded companies. It enables companies to raise capital and offers investors the opportunity to earn returns through stock price increases and dividends. Trading occurs on various exchanges, reflecting market trends and economic conditions.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="stock-market.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                     </a>
+                     <!-- card 3 -->
+                     <a href="olympic.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/olympic.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="olympic.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Paris 2024: A Celebration of Sport and Culture
+                                </span>
+                                </a>
+                                 
+                                <a href="olympic.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    The 2024 Summer Olympics will take place in Paris from July 26 to August 11. This marks Paris's third time hosting the Games, offering a vibrant fusion of sports and culture across the city’s iconic landmarks. Athletes from around the world will compete in a range of events, celebrating athletic prowess and global unity in a historic setting.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="olympic.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                     </a>
+                     <!-- card 4 -->
+                     <a href="labour-day.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/labor-day.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="labour-day.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Labor Day: Honoring Workers and Their Contributions
+                                </span>
+                                </a>
+                                 
+                                <a href="labour-day.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    Labor Day, observed on the first Monday in September, honors the contributions and achievements of American workers. It marks the unofficial end of summer with parades, picnics, and festivities. The day recognizes the vital role workers play in driving the nation’s progress and celebrates their efforts and dedication.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="labour-day.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                    </a>
+                    </div>
+                <!-- card 5 -->
+                 <!-- 2nd row -->
+                <div class="flex max-lg:flex-wrap max-lg:space-x-[1rem] max-lg:space-y-[2rem]  justify-center lg:space-x-[1rem]">
+                    <a href="retro-games.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/retro.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="retro-games.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Echoes of Arcade Days
+                                </span>
+                                </a>
+                                 
+                                <a href="retro-games.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    Retro gaming evokes a profound sense of nostalgia. Titles like "Pac-Man," "Donkey Kong," and "Space Invaders" captivated players with their pixelated graphics and addictive simplicity. These classic games weren’t just entertainment; they were milestones in gaming history. Their charm and challenge continue to remind us of childhood.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="retro-games.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                    </a>
+                    <!-- card 6 -->
+                    <a href="top-cities.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/city.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="top-cities.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Icons of World Cities
+                                </span>
+                                </a>
+                                 
+                                <a href="top-cities.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    Exploring world cities sparks deep nostalgia for diverse cultures and histories. Cities like Paris, Tokyo, New York, and Cairo captivate with their unique charm and iconic landmarks. Each city, from its bustling streets to historic sites, offers a glimpse into a rich past and vibrant present. They remind us of the world’s endless wonder and variety.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="top-cities.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                    </a>
+                    <!-- card 7 -->
+                    <a href="neurologist.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/neurologist.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="neurologist.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Neurologist
+                                </span>
+                                </a>
+                                 
+                                <a href="neurologist.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    A neurologist is a medical doctor who diagnoses, treats and manages disorders of the brain and nervous system (brain, spinal cord and nerves). A neurologist knows the anatomy, function and conditions that affect your nerves and nervous system. Your nervous system is your body’s command center.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="neurologist.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                    </a>
+                    <!-- card 8 -->
+                    <a href="ghost-stories.html">
+                        <div class="card">
+                            <div class="image" style="background: url(assets/ghost.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                            <div class="content">
+                                <a href="ghost-stories.html">
+                                <span data-key="cardTitle1" class="title">
+                                    Top 10 ghost stories
+                                </span>
+                                </a>
+                                 
+                                <a href="ghost-stories.html">
+                                <p data-key="cardDescription1" class="desc">
+                                    Brace yourself for the top 10 ghost stories that will crawl under your skin and chill you to the bone. Each tale is a harrowing encounter with the unknown—vengeful spirits, eerie apparitions, and dark forces that defy all reason. Read if you dare, but remember: once these stories get into your mind, they never truly leave.
+                                </p>
+                                </a>
+            
+                                <a  class="action" href="ghost-stories.html">
+                                Read More
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer class="footer bg-base-200 text-base-content p-10">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav class="flex flex-row space-x-[1rem]">
+              <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-youtube text-[2rem] lg:active:text-[black] lg:hover:text-[red] text-[black]"></i></a>
+              <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-square-facebook text-[2rem] lg:active:text-[black] lg:hover:text-[blue] text-[black]"></i></a>
+              <a href="https://github.com/Saad-Al-Rifat" target="_blank"><i class="fa-brands fa-github text-[2rem] lg:active:text-[black] lg:hover:text-[gray] text-[black]"></i></a>
+              <a href="https://www.youtube.com/watch?v=KoyraNLnyL0" target="_blank"><i class="fa-brands fa-square-twitter text-[2rem] lg:active:text-[black] lg:hover:text-[blue] text-[black]"></i></a>
+            </nav>
+          </footer>
+    <!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- js file -->
+<script src="index.js"></script>
+</body>
+</html>
